@@ -750,4 +750,28 @@ a:focus {
 }
 
 
+/* Make both columns the same height and center images */
+.plot-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Fixed-height figure box so both sides align */
+.plot-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 360px;           /* adjust if you want larger/smaller */
+  margin: 0 auto 0.5rem;   /* small gap under the figure */
+}
+
+/* Preserve aspect ratio and fit within the box */
+.plot-figure img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
 
