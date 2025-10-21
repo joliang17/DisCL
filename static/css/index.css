@@ -775,3 +775,26 @@ a:focus {
   object-fit: contain;
 }
 
+/* Reusable single-image hover card */
+.hover-card{
+  margin: 1rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  background: var(--background-primary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+.hover-card:hover{
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.hover-card img{
+  display:block;
+  margin:0 auto;
+  max-width:100%;
+  height:auto;
+  border-radius: var(--border-radius);
+}
